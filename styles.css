@@ -1,0 +1,201 @@
+
+/* Les Typos */
+
+
+    /* GEORGIA BOLD */
+@font-face {
+	font-family: "Georgia Bold";
+	src: url("typos/georgiab.ttf");
+	font-style: normal;
+}
+.Georgiab {
+    font-family: Georgia Bold;
+}
+
+    /* GEORGIA REGULAR */
+@font-face {
+	font-family: "Georgia";
+	src: url("typos/georgia.ttf");
+	font-style: normal;
+}
+.Georgia {
+    font-family: Georgia;
+    color: rgb(75, 75, 75);
+    font-size: calc(0.4rem + 0.5vw);
+}
+
+    /* GEORGIA ITALIC */
+@font-face {
+	font-family: "Georgia Italic";
+	src: url("typos/georgiai.ttf");
+	font-style: normal;
+}
+.Georgiai {
+    font-family: Georgia Italic;
+    color: rgb(75, 75, 75);
+    font-size: calc(0.4rem + 0.5vw);
+}
+
+/* Haut de page / navigation */
+
+li {
+	list-style: none;
+}
+.denis {
+    padding-top: 0.7rem;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    justify-content: left;
+    width: 100%;
+    float: left;
+    font-style: italic;
+}
+.right {
+    justify-content: space-between;
+    width: 50%;
+    float: right;
+}
+a,
+a:visited {
+	color: rgb(75, 75, 75);
+	text-decoration: none;
+}
+a:hover {
+	color:black;
+}
+nav {
+    padding-left: 1rem;
+    padding-right: 0.7rem;
+	padding-bottom: 0.7rem;
+	padding-top: 0.7rem;
+	font-size: calc(0.5rem + 0.7vw);
+}
+nav ul {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Le corps du site */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    width: 100%;
+    padding-left: 1rem;
+}
+p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: calc(0.6rem + 0.8vw);
+    width: 60%;
+}
+img {
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-right: 0.4rem;
+}
+.legendes {
+    font-size: calc(0.1rem + 0.15rem);
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+}
+.liste {
+    font-size: calc(0.5rem + 0.6vw);
+    position: absolute;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.liste2 {
+    font-size: calc(0.4rem + 0.5vw);
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+}
+article {
+    padding-bottom: 5rem;
+}
+footer {
+    padding-left: 0.7rem;
+    padding-bottom: 0.2rem;
+    padding-top: 1rem;
+}
+
+/* --- TAILLE DES IMAGES --- */
+/* 1 - PREMIERE TAILLE : */
+.image1 {
+    width: 40%;
+}
+
+/* 2 - DEUXIEME TAILLE : */
+.image2 {
+    width: 70%;
+}
+
+/* 3 - TROISIEME TAILLE : */
+.image3 {
+    width: 100%;
+}
+
+
+/* Media Queries (= ADAPTABILITE / RESPONSIVE EN FONCTION DE LA TAILLE DE L'ECRAN */
+
+@media screen and (min-width:600px) {
+	main {
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width:800px) {
+	main {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+	main {
+        max-width: 60%;
+    }
+}
+
+
+/* BUTTON REMONTER LA PAGE */
+
+.btn {
+    font-family: georgia;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 30px;
+    background: white;
+	color: black;
+	display: flex;
+	text-align: center;
+	font-size: 20px;
+	align-items: center;
+	justify-content: center;
+    border: 2px;
+	border-radius: 20%;
+	border-width: 5px;
+	border-color: black;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	opacity: 1;
+	cursor: pointer;
+}
+.icone {
+    width: 40px;
+	align-items: center;
+	justify-content: center;
+}
