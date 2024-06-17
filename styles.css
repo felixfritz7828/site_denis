@@ -1,4 +1,7 @@
 
+/* ATTENTION - NE PAS MODIFIER */
+
+
 /* Les Typos */
 
 
@@ -79,7 +82,7 @@ nav ul {
     justify-content: space-between;
 }
 
-/* Le corps du site */
+/* La structure du site */
 
 * {
     padding: 0;
@@ -110,7 +113,7 @@ img {
     padding-bottom: 1rem;
 }
 .liste {
-    font-size: calc(0.5rem + 0.6vw);
+    font-size: calc(0.4rem + 0.5vw);
     position: absolute;
     right: 0;
     padding-left: 1rem;
@@ -170,12 +173,12 @@ footer {
 }
 
 
-/* BUTTON REMONTER LA PAGE */
+/* BUTTON POUR REMONTER EN HAUT DE LA PAGE */
 
 .btn {
     font-family: georgia;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin-bottom: 30px;
     background: white;
 	color: black;
